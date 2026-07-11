@@ -1,0 +1,8 @@
+project: libspdm
+target: test_spdm_responder_algorithms
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/test_spdm_responder_algorithms/testsuite
+cmds:
+  - cmd: /mayhem/test_spdm_responder_algorithms
+    libfuzzer: true

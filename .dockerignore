@@ -1,0 +1,9 @@
+# Keep .git (the spec bakes full history into the image) — do NOT exclude it.
+# Prune only local build artifacts that must never enter the build context; build.sh
+# creates its own trees (mayhem-build/, mayhem-tests/) inside the image.
+build/
+mayhem-build/
+mayhem-tests/
+out_libfuzz_*/
+build_libfuzz_*/
+.vscode/
